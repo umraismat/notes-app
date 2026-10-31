@@ -3,7 +3,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app.services.database import get_db
 from app.models.note import Note
-from app.schemas import NoteCreate, NoteUpdate, NoteOut
+from app.schemas.note import NoteCreate, NoteUpdate, NoteOut
 
 router = APIRouter(prefix="/notes", tags=["notes"])
 
